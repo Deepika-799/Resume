@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <style>
+    /* ---------------- Base Styles ---------------- */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.2rem;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 20px auto;
+      display: flex;
+      gap: 20px;
+    }
+
+    /* Sidebar (Left) */
+    .sidebar {
+      flex: 1;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    /* Main Content (Right) */
+    .main {
+      flex: 3;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* ---------------- Media Queries ---------------- */
+
+    /* Tablet (up to 1024px) */
+    @media (max-width: 1024px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+
+    /* Mobile (up to 576px) */
+    @media (max-width: 576px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .sidebar, .main {
+        padding: 15px;
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Deepika Sharma</h1>
+    <p>Web Developer | AI Enthusiast | Problem Solver</p>
+  </header>
+
+  <!-- Resume Content -->
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Contact</h2>
+      <p>Email: deepika@email.com</p>
+      <p>Phone: +91 9876543210</p>
+      <p>Location: India</p>
+
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python & AI Tools</li>
+        <li>Responsive Design</li>
+        <li>Problem Solving</li>
+      </ul>
+    </aside>
+
+    <!-- Main Section -->
+    <section class="main">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate web developer with experience in building
+        responsive and user-friendly websites. I love exploring AI tools
+        and integrating them into real-world applications.
+      </p>
+
+      <h2>Education</h2>
+      <p><strong>B.Tech in Computer Science</strong> – XYZ University</p>
+      <p>Graduated: 2024</p>
+
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Resume Website:</strong> Built a responsive personal portfolio website.</li>
+        <li><strong>AI Playlist Generator:</strong> Created a project to generate playlists using AI vibes.</li>
+        <li><strong>Data Preprocessing Tool:</strong> Automated ML data cleaning pipeline.</li>
+      </ul>
+
+      <h2>Experience</h2>
+      <p><strong>Internship – Web Developer</strong></p>
+      <p>Worked on building responsive UI components and integrating APIs.</p>
+    </section>
+  </div>
+
+</body>
+</html>
